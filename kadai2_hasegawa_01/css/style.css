@@ -26,6 +26,7 @@
     margin: 10px auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .menu {
@@ -35,16 +36,17 @@
 }
 
 li {
-    padding: 0 20px;
+    padding: 5px 20px;
     border-right: 1px solid black;
 }
 
-.r {
+li:last-child {
     border-right: none;
 }
 
 @media screen and (max-width: 767px) {
     .header {
+        padding: 0 10px;
         display: block;
     }
 
