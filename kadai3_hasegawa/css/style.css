@@ -37,7 +37,6 @@ p {
 }
 
 .service-title {
-    width: 100%;
     align-items: center;
     border-left: 12px solid green;
     padding: 0 10px;
