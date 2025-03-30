@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+/* ヘッダー */
+
+header {
+    position: relative;
+}
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7% 0 3%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header_logo {
+    width: 227px;
+}
+
+.pc_nav ul {
+    display: flex;
+    gap: 54px;
+}
+
+.pc_nav li {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    width: 105px;
+    text-align: center;
+}
+
+/* キャッチコピー */
+
+.copy {
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-top: 100px;
+}
+
+.copy_small_en {
+    line-height: 1.65;
+    font-size: 30px;
+    letter-spacing: normal;
+}
+
+.copy_small_ja {
+    line-height: 1.65;
+    font-size: 23px;
+}
+
+.copy_large {
+    font-size: 82px;
+    margin: 50px 0 20px 0;
+}
+
+/* ↓　内　容　↓ */
+.content {
+    padding: 0 24%;
+}
+
+/* ABOUT US */
+
+#aboutus {
+    margin-top: 90px;
+}
+
+#aboutus ul {
+    display: flex;
+}
+
+#aboutus li {
+    width: 50%;
+    padding-left: 45px;
+    box-sizing: border-box;
+}
+
+#aboutus img {
+    width: 100%;
+    border-bottom-right-radius: 82px;
+    /* 右上の角を丸くする */
+}
+
+#aboutus h2 {
+    margin: 50px 0;
+}
+
+#aboutus h2 img {
+    border-bottom-right-radius: 0%;
+}
+
+#aboutus h3 {
+    font-size: 44px;
+    line-height: 1.4;
+}
+
+#aboutus div {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 22px;
+}
