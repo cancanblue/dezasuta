@@ -269,12 +269,8 @@ header {
 /* ページトップ */
 
 #button {
-    max-width: 1920px;
     position: fixed;
     bottom: 20px;
-    right: 0;
-}
-
-#button img {
-    width: 50%;
+    right: 30px;
+    width: 125px;
 }
