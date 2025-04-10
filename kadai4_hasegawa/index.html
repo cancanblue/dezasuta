@@ -7,13 +7,17 @@
     <title>Design Cafe</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
     <header id="header">
         <div class="header_slider">
             <div>
-                <img src="./images/pc_first-100.jpg" alt="店内の様子">
+                <picture>
+                    <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
+                    <img src="./images/pc_first-100.jpg" alt="店内の様子">
+                </picture>
             </div>
         </div>
         <div class="header_wrap">
@@ -21,6 +25,18 @@
                 <img src="./images/design_cafe_logo_header@2x.png" alt="DESIGN CAFE">
             </h1>
             <nav class="pc_nav">
+                <ul>
+                    <li><a href="#aboutus">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
+                </ul>
+            </nav>
+            <div class="sp_btn">
+                <span></span>
+            </div>
+            <nav class="sp_nav">
                 <ul>
                     <li><a href="#aboutus">ABOUT US</a></li>
                     <li><a href="#menu">MENU</a></li>
@@ -43,11 +59,20 @@
             毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
             足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。
         </p>
+        <p class="copy_small_ja_sp">
+            毎日を丁寧に大切に過ごしたい。<br>
+            だからこそ一杯一杯丁寧にコーヒーを入れ<br>
+            足を運んでくれるお客さんには落ち着く空間と<br>
+            こだわりのコーヒーを提供したい。
+        </p>
     </div>
     <main>
         <section class="content" id="aboutus">
             <div class="aboutus_left">
-                <img src="./images/pc_about-100.jpg" alt="カフェの写真">
+                <picture>
+                    <source srcset="images/about_us@2x-100.jpg" media="(max-width: 767px)">
+                    <img src="./images/pc_about-100.jpg" alt="カフェの写真">
+                </picture>
             </div>
             <div class="aboutus_right">
                 <h2><img src="./images/about_us@2x.png" alt="ABOUT US"></h2>
@@ -152,7 +177,15 @@
     </footer>
     <div id="button"><a href="#header"><img src="./images/to_top@2x.png" alt="ページトップへ"></a></div>
 
+    <script>
+        $(function () {
+            $('.sp_btn').on('click', function () {
+                $('.sp_btn').toggleClass('open');
+                $('.sp_nav').fadeToggle();
+            })
 
+        })
+    </script>
 </body>
 
 </html>
