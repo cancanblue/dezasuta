@@ -50,11 +50,26 @@ h2 img {
     height: 78px;
 }
 
-
 body {
     background-color: #e8d9bf;
 }
 
 a:hover {
     opacity: 0.5;
+}
+
+.sp_br {
+    display: none;
+    /* 767px以上では改行タグを無効に。 */
+}
+
+@media screen and (max-width: 767px) {
+    h2 img {
+        height: 45px;
+    }
+
+    .sp_br {
+        display: block;
+        /*767px未満で改行タグを有効に。 */
+    }
 }
