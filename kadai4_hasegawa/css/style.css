@@ -175,6 +175,8 @@ header {
     margin: 0 auto;
 }
 
+/* GALLERY */
+
 #gallery {
     margin-top: 96px;
     text-align: center;
@@ -514,6 +516,10 @@ header {
         width: 100%;
     }
 
+    .gallery_list li:not(:first-child) {
+        display: none;
+    }
+
     /* EVENT */
 
     #event {
@@ -525,16 +531,21 @@ header {
         margin-top: 21px;
         padding: 21px 0 0 0;
         font-size: 16px;
+    }
+
+    .event_list div {
+        width: auto;
+        margin: 0 30px;
+    }
+
+    .event_list p {
+        margin-bottom: 23px;
         overflow: hidden;
         /* 溢れたテキストを隠す */
         text-overflow: ellipsis;
         /* 溢れたテキストに「...」を表示 */
         white-space: nowrap;
         /* テキストを1行に制限 */
-    }
-
-    .event_list p {
-        margin-bottom: 23px;
     }
 
     .event_list span {
