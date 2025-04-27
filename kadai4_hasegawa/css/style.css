@@ -133,7 +133,7 @@ header {
 }
 
 .content_large {
-    max-width: 1920px;
+    /* max-width: 1920px; */
     margin: 0 auto;
 }
 
@@ -243,6 +243,10 @@ header {
 
 .gallery_list img {
     width: 100%;
+}
+
+.lb-data .lb-number {
+    display: none !important;
 }
 
 /* EVENT */
